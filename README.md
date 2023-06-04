@@ -55,6 +55,7 @@ empowerd keys add cüzdanadi
 ## Sync Kontrolü
 * False dönene kadar başka işlem yapmanıza gerek yok!
 * False döndükten sonra validator kurulumu yapıyoruz. Validator kurulumu için aşağıdaki notları okumayı unutmayın!
+* [BURADAN](https://empower.explorers.guru/) explorer giderek blok sayılarını kontrol edebilirsiniz.
 ```
 empowerd status 2>&1 | jq .SyncInfo
 ```
