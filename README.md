@@ -48,8 +48,11 @@ empowerd keys add cüzdanadi
 * "cüzdanadi" bölümüne istediğiniz bir isim verebilirsiniz.,
 *  Cüzdanınızı oluşturduktan sonra size verilen gizli kelimelerinizi ve cüzdan adresinizi bir yere not etmeyi unutmayın.
 
-
-
+## Sync Kontrolü
+```
+empowerd status 2>&1 | jq .SyncInfo
+```
+![soncu](https://user-images.githubusercontent.com/111747226/243185688-d0a0386f-4c65-4b4a-a16c-476e36ff6036.jpg)
 
 ## Önemli Notlar.
 * Şuan Faucet yok bu nedenle bu bölümü faucet açıldıktan sonra yapacaksınız.
