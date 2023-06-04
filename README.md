@@ -38,6 +38,8 @@ source $HOME/.bash_profile
 ```
  sudo journalctl -u empowerd -fo cat
 ```
+![log-kaydi](https://github.com/CoinHuntersTR/EmpowerChain/assets/111747226/b92c90fb-7788-411b-a6f8-adc31e9884dc)
+
 
 ## Cüzdan Oluşturma;
 ```
