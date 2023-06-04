@@ -34,6 +34,10 @@ curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/CoinHuntersTR/
 ```
 source $HOME/.bash_profile
 ```
+## Logları Görüntüleme
+```
+ sudo journalctl -u empowerd -fo cat
+```
 
 ## Cüzdan Oluşturma;
 ```
@@ -41,6 +45,9 @@ empowerd keys add cüzdanadi
 ```
 * "cüzdanadi" bölümüne istediğiniz bir isim verebilirsiniz.,
 *  Cüzdanınızı oluşturduktan sonra size verilen gizli kelimelerinizi ve cüzdan adresinizi bir yere not etmeyi unutmayın.
+
+
+
 
 ## Önemli Notlar.
 * Şuan Faucet yok bu nedenle bu bölümü faucet açıldıktan sonra yapacaksınız.
