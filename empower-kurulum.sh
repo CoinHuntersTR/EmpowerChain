@@ -145,5 +145,4 @@ sleep 1
 echo -e ""
 echo -e "\e[0;32mLogları Görüntülemek İçin:\033[0;33m           sudo journalctl -u empowerd -fo cat\e[0m"
 sleep 1 && curl -s https://raw.githubusercontent.com/CoinHuntersTR/Andromeda-Testnet-Rehberi/main/logo.sh | bash && sleep 1
-source $HOME/.bash_profile
 }
