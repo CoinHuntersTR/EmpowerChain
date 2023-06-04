@@ -11,6 +11,10 @@
 * 7 Haziran - 20 Haziran: Ana aşama
 * 21 Haziran - 25 Haziran: Stres testi aşaması
 #### Ödüller 1 yıl lineer vestingli dağıtılacak!!
+[BURADAN](https://docs.empowerchain.io/testnet/overview) deatayları okuyabilirsiniz.
+
+![odul](https://github.com/CoinHuntersTR/EmpowerChain/assets/111747226/bd772e32-8435-49ac-91ac-9cf48ea78e64)
+
 
 * Testnet sonunda KYC olacak
 ## Sistem gereksinimleri:
@@ -49,6 +53,8 @@ empowerd keys add cüzdanadi
 *  Cüzdanınızı oluşturduktan sonra size verilen gizli kelimelerinizi ve cüzdan adresinizi bir yere not etmeyi unutmayın.
 
 ## Sync Kontrolü
+* False dönene kadar başka işlem yapmanıza gerek yok!
+* False döndükten sonra validator kurulumu yapıyoruz. Validator kurulumu için aşağıdaki notları okumayı unutmayın!
 ```
 empowerd status 2>&1 | jq .SyncInfo
 ```
