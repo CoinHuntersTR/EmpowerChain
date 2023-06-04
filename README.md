@@ -24,4 +24,44 @@ NODE TİPİ | CPU     | RAM      | SSD     |
 * Hetzner için bu gereksinimleri almka yeterli olacaktır.
 Hetzner kaydınız yok ise [BURADAN](https://hetzner.cloud/?ref=ew4WgPUfxeyJ) linke basıp 20€ değerinde ödül kazanıp, testnete katılabilirsiniz.
 
+## Script ile kurulum;
+```
+curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/CoinHuntersTR/EmpowerChain/main/empower-kurulum.sh && chmod +x empower-kurulum.sh && bash ./empower-kurulum.sh
+```
+* Tek bu kodu çalıştırmanız yeterli olacaktır.
 
+## Kurulum tamamlandıktan sonra;
+```
+source $HOME/.bash_profile
+```
+
+## Cüzdan Oluşturma;
+```
+empowerd keys add cüzdanadi
+```
+* "cüzdanadi" bölümüne istediğiniz bir isim verebilirsiniz.,
+*  Cüzdanınızı oluşturduktan sonra size verilen gizli kelimelerinizi ve cüzdan adresinizi bir yere not etmeyi unutmayın.
+
+## Önemli Notlar.
+* Şuan Faucet yok bu nedenle bu bölümü faucet açıldıktan sonra yapacaksınız.
+* Şuan node kurup sync olmayı bekliyoruz. Faucet açıldıktan sonra aşağıdaki bölüme devam edeceğiz.
+
+## Validator Oluşturma;
+
+* "cüzdanadi" yazan yere kendi cüzdanadınızı yazacaksınız.
+* "twitter adresinizi ekleyebilirsiniz." yazan yere " kalacak şekilde twitter adresinizi ekleyebilirsiniz.
+```
+empowerd tx staking create-validator \
+  --amount 1000000umpwr \
+  --from cüzdanadi \
+  --commission-max-change-rate "0.01" \
+  --commission-max-rate "0.2" \
+  --commission-rate "0.1" \
+  --min-self-delegation "1" \
+  --pubkey  $(empowerd tendermint show-validator) \
+  --moniker $MONIKER \
+  --website "twitter adresinizi ekleyebilirsiniz."
+  --details "twitter adresinizi ekleyebilirsiniz" \
+  --chain-id circulus-1
+  --y
+```
