@@ -71,18 +71,17 @@ empowerd status 2>&1 | jq .SyncInfo
 * "twitter adresinizi ekleyebilirsiniz." yazan yere " kalacak şekilde twitter adresinizi ekleyebilirsiniz.
 ```
 empowerd tx staking create-validator \
-  --amount=1000000umpwr \
+  --amount=100000umpwr \
   --pubkey=$(empowerd tendermint show-validator) \
-  --moniker=CoinHunters \
-  --identity=F0F603C1097C160F \
-  --details="https://linktr.ee/coinhunters" \
-  --website="https://coinhunterstr.com/" \
+  --moniker=MonikerAdiniz \
+  --details="discord kullanıcı adınız" \
+  --website="twitter adresiniz olabilir" \
   --chain-id=circulus-1 \
   --commission-rate=0.10 \
   --commission-max-rate=0.20 \
   --commission-max-change-rate=0.01 \
   --min-self-delegation=1 \
-  --from=coinhunters \
+  --from=cüzdanadi \
   --gas-prices=0.1umpwr \
   --gas-adjustment=1.5 \
   --gas=auto \
